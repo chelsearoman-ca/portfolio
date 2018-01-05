@@ -55,7 +55,7 @@ $desktop-width: 1024px;
   }
   
   @mixin desktop {
-   @media (min-width: #{$desktop-width}) {
+   @media (max-width: #{$desktop-width}) {
      @content;
    }
   }

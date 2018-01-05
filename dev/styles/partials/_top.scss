@@ -41,11 +41,6 @@ li{
     margin: 0 30px;
 }
 
-// a{
-//   text-decoration: none;
-  
-//   transition: color 0.3s ease;
-// }
 
 a:hover
 {
@@ -60,7 +55,7 @@ a:hover
   left: 50px;
   z-index: 1;
   -webkit-user-select: none;
-  user-select: none; //what
+  user-select: none; 
 }
 
 #menuToggle input{
@@ -72,13 +67,13 @@ a:hover
   left: -10px;
   opacity: 0;
   margin-bottom: 0;
-  z-index: 999;
+  z-index: 2;
   padding: 30px;
   -webkit-touch-callout: none;
 }
 
 /*
- * Just a quick hamburger
+ hamburger
  */
 #menuToggle span{
   display: block;

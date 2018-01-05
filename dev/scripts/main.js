@@ -36,15 +36,23 @@ anime.timeline({loop: true})
     delay: 1000
   });
 
+  'use strict';
   
-
-  // var controller = new ScrollMagic.Controller();
+  //smoothscroll plugin
   
-  // // create a scene
-  // new ScrollMagic.Scene({
-  //         duration: 100,    // the scene should last for a scroll distance of 100px
-  //         offset: 50        // start this scene after scrolling for 50px
-  //     })
-  //     .setPin("#about") // pins the element for the the scene's duration
-  //     .addTo(controller);
+  $('a[href^="#"]').on('click', function (event) {
+      var target = $(this.getAttribute('href'));
+      if (target.length) {
+          event.preventDefault();
+          $('html, body').stop().animate({
+              scrollTop: target.offset().top
+          }, 1000);
+      }
+  });
   
+  $(function () {
+  
+      AOS.init({
+        duration: 1200,
+      });
+  });
