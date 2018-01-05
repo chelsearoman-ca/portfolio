@@ -1,0 +1,178 @@
+header{
+    height:100vh;
+    width: 100vw;
+    padding-top:10px;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(90deg, transparent, rgba(43, 192, 228, .7) 0%, rgba(234, 236, 198, 0.8) 100%),
+      url("/public/images/CRinside-500.png") 50px 100px no-repeat,
+      url("/public/images/contact-background.jpg") no-repeat;
+}
+// 20deg, rgba(43,192,228,1) 0%, rgba(43,192,228,1) 11%, rgba(234,236,198,1) 84%, rgba(234,236,198,1) 100%); 
+header::after {
+    background: white;
+    content: '';
+    display: block;
+    height: 15%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; // for Chrome Windows
+    bottom: 0;
+    transform: skewY(-1.9deg);
+    transform-origin: 100%;
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.3);
+  }
+
+
+
+
+li{
+    list-style-type: none;
+    text-transform: uppercase;
+    a{
+      color: #444444;
+      transition: color 0.3s ease;
+    }
+    a::hover{
+      color: #ffffff;
+    }
+    margin: 0 30px;
+}
+
+// a{
+//   text-decoration: none;
+  
+//   transition: color 0.3s ease;
+// }
+
+a:hover
+{
+  color: tomato;
+}
+
+#menuToggle
+{
+  display: block;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none; //what
+}
+
+#menuToggle input{
+  display: block;
+  width: 40px;
+  height: 28px;
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  opacity: 0;
+  margin-bottom: 0;
+  z-index: 999;
+  padding: 30px;
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #000000;
+  border-radius: 3px;
+  
+  z-index: 99;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.5,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.5,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2){
+  transform-origin: 0% 100%;
+}
+
+#menu{
+  position: absolute;
+  width: 200px;
+  margin: -100px 0 0 -50px;
+  padding: 20px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li{
+  padding: 5px 0;
+  font-size: 1.4rem;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul{
+  transform: none;
+}
+
+
+
+.ml11 {
+  font-weight: 700;
+  font-size: 4.8rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 30% 0 auto;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 100%;
+}
+
+.ml11 .line1 { 
+  top: 0; 
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.career-title {
+  font-size: 3rem;
+  margin-left: 40%;
+} 

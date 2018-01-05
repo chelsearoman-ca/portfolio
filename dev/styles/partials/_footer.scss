@@ -1,0 +1,109 @@
+ 
+.contact{
+    background: linear-gradient( rgba(0, 0, 0, 0.3)),
+    url("/public/images/contact-background.jpg") no-repeat;
+    background-size: cover;
+    padding: 100px 0 100px 0;
+    h2{
+        margin: 0 auto 5px auto;
+        font-size: 3.2rem;
+        
+    }
+}
+img.underline{
+    margin: 0 auto 72px auto;
+    width: 5%;
+}
+img.underline02 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto 72px auto;
+    width: 5%;
+}
+
+ .section-title {
+     text-align: center;
+ }
+
+.contact-box{
+    background-color: white;
+    max-width: 1170px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+     @include desktop{
+        flex-direction: column-reverse;
+    }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0 100px 0;
+    @include desktop{
+        padding: 50px 0 50px 0;
+    }
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+input, textarea{
+    border-radius: 2px;
+    border: none;
+    background-color:  #f6f6f6;
+    padding: 12px;
+    font-size: 1.1rem;
+}
+
+textarea{
+    resize: none;
+    overflow: auto;
+    vertical-align: top;
+    margin-bottom: 35px;
+    font-size: 1.1rem;
+}
+
+.button{
+    width: 160px;
+    background-color: pink;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 6px 0;
+}
+.email{
+    background-color: white;
+    padding: 100px 0px 100px 30px;
+    @include desktop{
+        padding: 100px 150px 50px 150px;
+    }
+}
+
+.icon-circle{
+    background-color: #f6f6f6;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h5 {
+        text-transform: uppercase;
+        margin: 20px 0 20px 0;
+        font-size: 1rem;
+    }
+    p{
+        margin: 0;
+        font-size: 1rem;
+    }
+}
+
+.fa{
+    border: 2px grey solid;
+    padding: 20px;
+    border-radius: 50%;
+    align-self: center;
+}

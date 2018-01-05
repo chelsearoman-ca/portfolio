@@ -1,0 +1,33 @@
+.skills{
+ background-color: white;
+ position: relative;
+ z-index: 1;
+}
+.skills-long-wrapper{
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+}
+
+.skill-icons{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    text-align: center;
+
+}
+.devicons{
+    padding: 20px;
+}
+.devicons i:first-child{
+    font-size: 4rem;
+}
+
+
+.skills::after{
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
+  }
+
+.firebasepng{
+    width: 60px;
+}
