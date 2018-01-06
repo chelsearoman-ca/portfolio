@@ -1,3 +1,27 @@
+// 'use strict';
+
+//smoothscroll plugin
+
+$('a[href^="#"]').on('click', function (event) {
+    var target = $(this.getAttribute('href'));
+    if (target.length) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+});
+
+$(function () {
+
+    AOS.init({
+      duration: 1200,
+    }); console.log("Made it to init");
+});
+
+$(window).on('load', function () {
+  AOS.refresh();
+});
 
 
 // Wrap every letter in a span
@@ -34,25 +58,4 @@ anime.timeline({loop: true})
     duration: 1000,
     easing: "easeOutExpo",
     delay: 1000
-  });
-
-  'use strict';
-  
-  //smoothscroll plugin
-  
-  $('a[href^="#"]').on('click', function (event) {
-      var target = $(this.getAttribute('href'));
-      if (target.length) {
-          event.preventDefault();
-          $('html, body').stop().animate({
-              scrollTop: target.offset().top
-          }, 1000);
-      }
-  });
-  
-  $(function () {
-  
-      AOS.init({
-        duration: 1200,
-      });
   });
