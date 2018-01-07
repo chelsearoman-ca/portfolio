@@ -53,7 +53,7 @@ input{
 input, textarea{
     border-radius: 2px;
     border: none;
-    background-color:  #f6f6f6;
+    background-color: #dddddd;
     padding: 12px;
     font-size: 1.1rem;
 }
@@ -85,7 +85,7 @@ textarea{
 }
 
 .icon-circle{
-    background-color: #f6f6f6;
+    background-color: #dddddd;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -101,21 +101,24 @@ textarea{
     }
 }
 
-.fa{
+.other-links{
+    display: flex;
+    justify-content: center;
+}
+
+.other-links i{
+    color: darkgrey;
+    padding: 20px 20px;
+}
+
+.other-links i:hover{
+    color: (darken($color: darkgrey, $amount: 20));
+    padding: 20px 20px;
+}
+
+.email-icon{
     border: 2px grey solid;
     padding: 20px;
     border-radius: 50%;
     align-self: center;
 }
-
-.item {
-    width: 200px;
-    height: 200px;
-    margin: 50px auto;
-    padding-top: 75px;
-    background: #ccc;
-    text-align: center;
-    color: #FFF;
-    font-size: 3em;
-  }
-  
