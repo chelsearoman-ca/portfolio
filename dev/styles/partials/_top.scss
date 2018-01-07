@@ -3,7 +3,7 @@ header{
     width: 100vw;
     padding-top:10px;
     position: relative;
-    z-index: 1;
+    z-index: 0;
     background: linear-gradient(90deg, transparent, rgba(43, 192, 228, .7) 0%, rgba(234, 236, 198, 0.8) 100%),
       url("/public/images/CRinside-500.png") 50px 100px no-repeat,
       url("/public/images/contact-background.jpg") no-repeat;
@@ -22,7 +22,7 @@ header::after {
     bottom: 0;
     transform: skewY(-1.9deg);
     transform-origin: 100%;
-    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 -10px 10px  rgba(0, 0, 0, 0.3);
   }
 
 
@@ -65,7 +65,7 @@ a:hover{
   position: fixed;
   top: 50px;
   right: 120px;
-  opacity: 1;
+  opacity: 0;
   margin-bottom: 0;
   z-index: 2;
   padding: 25px;
