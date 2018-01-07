@@ -1,5 +1,7 @@
 // 'use strict';
-
+$(".menu-a").on("click", function () {
+  $("#checkbox").prop("checked", false);
+})
 //smoothscroll plugin
 
 $('a[href^="#"]').on('click', function (event) {

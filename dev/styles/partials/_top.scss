@@ -8,7 +8,7 @@ header{
       url("/public/images/CRinside-500.png") 50px 100px no-repeat,
       url("/public/images/contact-background.jpg") no-repeat;
 }
-// 20deg, rgba(43,192,228,1) 0%, rgba(43,192,228,1) 11%, rgba(234,236,198,1) 84%, rgba(234,236,198,1) 100%); 
+
 header::after {
     background: white;
     content: '';
@@ -42,34 +42,33 @@ li{
 }
 
 
-a:hover
-{
+a:hover{
   color: tomato;
 }
 
-#menuToggle
-{
+#menuToggle{
   display: block;
   position: fixed;
   top: 50px;
-  left: 50px;
-  z-index: 1;
-  -webkit-user-select: none;
+  right: 100px;
+  z-index: 2;
   user-select: none; 
+  transition: 0.3s;
+  width: 50px;
+  height: 50px;
 }
 
 #menuToggle input{
   display: block;
+  height: 40px;
   width: 40px;
-  height: 28px;
-  position: absolute;
-  top: -20px;
-  left: -10px;
-  opacity: 0;
+  position: fixed;
+  top: 50px;
+  right: 120px;
+  opacity: 1;
   margin-bottom: 0;
   z-index: 2;
-  padding: 30px;
-  -webkit-touch-callout: none;
+  padding: 25px;
 }
 
 /*
@@ -83,8 +82,7 @@ a:hover
   position: relative;
   background: #000000;
   border-radius: 3px;
-  
-  z-index: 99;
+  z-index: 1;
   
   transform-origin: 4px 0px;
   
@@ -114,8 +112,7 @@ a:hover
   /* to stop flickering of text in safari */
   
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  
+  transform: translate(0%, -100%);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
