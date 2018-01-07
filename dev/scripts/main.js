@@ -61,3 +61,7 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+
+  // setTimeout(function(){
+  //   $("#animation").addClass("pulse");
+  //  },2000);

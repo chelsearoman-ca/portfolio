@@ -35,3 +35,32 @@
 .firebasepng{
     width: 60px;
 }
+
+.pulse {
+    animation: pulse infinite alternate linear 0.5s;
+    opacity: 1;
+    visibility: visible;
+  }
+  .pulse-slow {
+    animation: pulse infinite alternate linear 0.8s;
+    opacity: 1;
+    visibility: visible;
+  }
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes pulse-slow {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }

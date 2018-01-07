@@ -121,3 +121,17 @@ textarea{
     border-radius: 50%;
     align-self: center;
 }
+
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    p{
+        font-size: 1rem;
+    }
+    a{
+        color: slategrey;
+    }
+    a:hover{
+        color: rgb(43, 192, 228);
+    }
+}
