@@ -1,16 +1,5 @@
 
-.wrapper-less{
-    margin: 100px 10%;
-}
-
-.wrapper-less section {
-    display: flex;
-    justify-content: center;
-    &:nth-of-type(even){
-        flex-direction: row-reverse;
-    }
-
-}   
+ 
 .portfolio-image-container{
     display: flex;
     align-items: center;

@@ -14,7 +14,10 @@ body {
     padding: 0;
 }
 
-
+h2{
+    margin: 0 auto 5px auto;
+    font-size: 3.2rem;
+}
 .top-icon{
     height:30px;
 }
@@ -31,6 +34,22 @@ a{
     margin: 46px 18.23%;
 }
 
+.wrapper-less{
+    margin: 100px 10%;
+}
+
+.wrapper-less section {
+    display: flex;
+    justify-content: center;
+    &:nth-of-type(even){
+        flex-direction: row-reverse;
+    }
+
+}  
+
+.underline{
+    margin: 0 auto 90px auto;
+}
 //Mixins
 $mobile-width: 480px;
 $tablet-width: 768px;
