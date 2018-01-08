@@ -34,7 +34,7 @@ form{
     flex-direction: column;
     padding: 100px 0 100px 0;
     @include desktop{
-        padding: 50px 0 50px 0;
+        padding: 50px;
     }
 }
 
@@ -66,7 +66,7 @@ textarea{
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 700;
-    padding: 6px 0;
+    padding: 10px 0;
     border: none;
 }
 .email{

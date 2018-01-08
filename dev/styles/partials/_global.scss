@@ -1,3 +1,31 @@
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile-width}) {
+     @content;
+     } 
+  } 
+  @mixin mobileplus {
+     @media (min-width: #{$mobile-width + 1px}) and 
+  (max-width: #{$tablet-width - 1px}){
+     @content;
+     }
+  }
+  @mixin tablet {
+   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+     @content;
+   }
+  }
+  
+  @mixin desktop {
+   @media (max-width: #{$desktop-width}) {
+     @content;
+   }
+  }
+
+
 html,body
 {
     overflow-y:auto;
@@ -32,48 +60,16 @@ a{
 
 .wrapper{
     margin: 46px 18.23%;
+    @include desktop{
+        margin: 46px 10%;
+     }
 }
 
 .wrapper-less{
-    margin: 100px 10%;
+    margin: 100px 10%;  
 }
-
-.wrapper-less section {
-    display: flex;
-    justify-content: center;
-    &:nth-of-type(even){
-        flex-direction: row-reverse;
-    }
-
-}  
 
 .underline{
     margin: 0 auto 90px auto;
 }
 //Mixins
-$mobile-width: 480px;
-$tablet-width: 768px;
-$desktop-width: 1024px;
-
-@mixin mobile {
-    @media (max-width: #{$mobile-width}) {
-     @content;
-     } 
-  } 
-  @mixin mobileplus {
-     @media (min-width: #{$mobile-width + 1px}) and 
-  (max-width: #{$tablet-width - 1px}){
-     @content;
-     }
-  }
-  @mixin tablet {
-   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
-     @content;
-   }
-  }
-  
-  @mixin desktop {
-   @media (max-width: #{$desktop-width}) {
-     @content;
-   }
-  }
