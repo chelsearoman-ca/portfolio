@@ -3,8 +3,10 @@
     background: linear-gradient( rgba(0, 0, 0, 0.3)),
     url("/public/images/contact-background.jpg") no-repeat;
     background-size: cover;
-    padding: 100px 0 100px 0;
-
+    padding: 100px 0;
+    @include tablet{
+        padding: 50px 0;
+    }
 }
 
 img.underline02 {
@@ -34,7 +36,10 @@ form{
     flex-direction: column;
     padding: 100px 0 100px 0;
     @include desktop{
-        padding: 50px;
+        padding: 0 50px 50px;
+    }
+    @include tablet{
+        padding: 0 50px 50px;
     }
 }
 
@@ -74,6 +79,9 @@ textarea{
     padding: 100px 0px 100px 30px;
     @include desktop{
         padding: 100px 150px 50px 150px;
+    }
+    @include tablet{
+        padding: 50px;
     }
 }
 
