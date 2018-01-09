@@ -37,12 +37,12 @@
 }
 
 .pulse {
-    animation: pulse infinite alternate linear 0.5s;
+    animation: pulse infinite alternate linear 1s;
     opacity: 1;
     visibility: visible;
   }
   .pulse-slow {
-    animation: pulse infinite alternate linear 0.8s;
+    animation: pulse infinite alternate linear 2s;
     opacity: 1;
     visibility: visible;
   }

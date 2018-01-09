@@ -22,7 +22,7 @@ img.underline02 {
 
 .contact-box{
     background-color: white;
-    max-width: 1170px;
+    // max-width: 1170px;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
@@ -34,12 +34,18 @@ img.underline02 {
 form{
     display: flex;
     flex-direction: column;
-    padding: 100px 0 100px 0;
+    padding: 80px 0;
     @include desktop{
         padding: 0 50px 50px;
     }
     @include tablet{
         padding: 0 50px 50px;
+    }
+    @include mobile-plus{
+        padding: 0 30px 30px;
+    }
+    @include mobile{
+        padding: 0 20px 20px;
     }
 }
 
@@ -65,24 +71,32 @@ textarea{
 
 .button{
     width: 160px;
-    background-color: pink;
+    background: linear-gradient(90deg, rgba(41, 196, 231, 0.6) 0%, rgba(223, 224, 188, 0.9) 100%);
     text-align: center;
     color: white;
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 700;
     padding: 10px 0;
+    // box-shadow: 2px 2px 10px rgb(43,192,228);
+    border-radius: 4px;
     border: none;
 }
 .email{
     background-color: white;
-    padding: 100px 0px 100px 30px;
+    padding: 80px 0px 80px 30px;
     @include desktop{
         padding: 100px 150px 50px 150px;
     }
     @include tablet{
-        padding: 50px;
+        padding: 100px 150px 50px 150px;
     }
+    @include mobile-plus{
+        padding: 100px 50px 50px 50px;
+     }
+     @include mobile{
+         padding: 20px 20px;
+     }
 }
 
 .icon-circle{
@@ -91,14 +105,25 @@ textarea{
     display: flex;
     flex-direction: column;
     text-align: center;
+    @include mobile-plus{
+        padding: 30px;
+    }
+    @include mobile{
+        padding: 20px;
+    }
     h5 {
         text-transform: uppercase;
         margin: 20px 0 20px 0;
         font-size: 1rem;
     }
     p{
-        margin: 0;
+        margin: 0 auto;
         font-size: 1rem;
+        text-align: center;
+        @include mobile{
+            font-size: .9rem;
+            margin: 0 auto;
+        }
     }
 }
 

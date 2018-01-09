@@ -26,12 +26,27 @@
 }
 
 .author-img-container{
-    width: 40%;
+    width: 50%;
     padding-right: 10%;
     @include desktop{
         margin: 0 auto;
         padding: 0;
         width: 50%;
+    }
+    @include tablet{
+        margin: 0 auto;
+        padding: 0;
+        width: 60%;
+    }
+    @include mobile-plus{
+        margin: 0 auto;
+        padding: 0;
+        width: 60%;
+    }
+    @include mobile{
+        margin: 0 auto;
+        padding: 0;
+        width: 90%;
     }
 }
 
@@ -50,6 +65,18 @@
     p{
         font-size: 1.4rem;
         line-height: 2.5rem;
+        @include desktop{
+            font-size: 1.2rem;
+            line-height: 2.5rem;
+        }
+        @include mobile-plus{
+            font-size: 1rem;
+            line-height: 2rem;
+        }
+        @include mobile{
+            font-size: .9rem;
+            line-height: 1.5rem;
+        }
     }
     p:first-child{
         margin-top: 0;

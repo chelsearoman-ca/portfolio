@@ -1,13 +1,13 @@
 $mobile-width: 480px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
-
+$lrg-desktop-width: 1920px;
 @mixin mobile {
     @media (max-width: #{$mobile-width}) {
      @content;
      } 
   } 
-  @mixin mobileplus {
+  @mixin mobile-plus {
      @media (min-width: #{$mobile-width + 1px}) and 
   (max-width: #{$tablet-width - 1px}){
      @content;
@@ -24,9 +24,14 @@ $desktop-width: 1024px;
      @content;
    }
   }
+  @mixin large-desktop{
+    @media(min-width:#{$desktop-width + 1px}) and (max-width: #{$lrg-desktop-width}){
+        @content;
+    }
+  }
 
 
-html,body
+html, body
 {
     overflow-y:auto;
     width: 100%;
@@ -38,13 +43,21 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 62.5%;
     color: #4a4a4a;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    max-width: 1920px;
 }
 
 h2{
     margin: 0 auto 5px auto;
     font-size: 3.2rem;
+    @media(max-width:461px){
+       font-size: 2.8rem;
+     }
+     @media(max-width: 380px){
+         font-size: 2rem;
+     }
+
 }
 .top-icon{
     height:30px;
@@ -66,7 +79,10 @@ a{
 }
 
 .wrapper-less{
-    margin: 100px 10%;  
+    margin: 100px 10%; 
+    @include mobile{
+        margin: 100px 8%;
+    }
 }
 
 .underline{

@@ -6,7 +6,7 @@ header{
     z-index: 0;
     background: linear-gradient(90deg, transparent, rgba(43, 192, 228, .7) 0%, rgba(234, 236, 198, 0.8) 100%),
       url("/public/images/CRinside-500.png") 50px 100px no-repeat,
-      url("/public/images/contact-background.jpg") no-repeat;
+      url("/public/images/contact-background-lg.jpg") no-repeat;
 }
 
 header::after {
@@ -39,7 +39,7 @@ li{
 }
 
 a:hover{
-  color: tomato;
+  color: rgb(43, 192, 228);
 }
 
 #menuToggle{
@@ -52,6 +52,14 @@ a:hover{
   transition: 0.3s;
   width: 50px;
   height: 50px;
+  @media(max-width:600px){
+     top: 10px;
+     right: 42%;
+     margin: 0 auto
+  }
+  @media(max-width:400px){
+    margin: 0 auto;
+  }
 }
 
 #menuToggle input{
@@ -65,6 +73,14 @@ a:hover{
   margin-bottom: 0;
   z-index: 2;
   padding: 25px;
+  @media(max-width:600px){
+    top: 10px;
+    right: 42%;
+ }
+ @media(max-width:400px){
+  top: 10px;
+  right: 50%;
+}
 }
 
 /*
@@ -76,15 +92,10 @@ a:hover{
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #000000;
+  background: rgb(43, 192, 228);
   border-radius: 3px;
   z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.5,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.5,0.2,0.05,1.0),
-              opacity 0.55s ease;
+
 }
 
 #menuToggle span:first-child{
@@ -110,6 +121,12 @@ a:hover{
   transform-origin: 0% 0%;
   transform: translate(0%, -100%);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  @media(max-width:600px){
+    margin: -100px 0 0 -90px;
+ }
+ @media(max-width:400px){
+  margin: -100px 0 0 -75px;
+}
 }
 
 #menu li{
@@ -130,6 +147,42 @@ a:hover{
   font-weight: 700;
   font-size: 4.8rem;
   font-family: 'Raleway', sans-serif;
+  @media (max-width: 730px){
+    font-size: 4.6rem;
+  }
+  @media (max-width: 700px){
+    font-size: 4.4rem;
+  }
+  @media (max-width: 670px){
+    font-size: 4rem;
+  }
+  @media (max-width: 609px){
+    font-size: 3.6rem;
+  }
+  @media (max-width: 549px){
+    font-size: 3.4rem;
+  }
+  @media (max-width: 519px){
+    font-size: 3.2rem;
+  }
+  @media (max-width: 489px){
+    font-size: 3rem;
+  }
+  @media (max-width: 459px){
+    font-size: 2.8rem;
+  }
+  @media (max-width: 425px){
+    font-size: 2.6rem;
+  }
+  @media (max-width: 396px){
+    font-size: 2.4rem;
+  }
+  @media (max-width: 366px){
+    font-size: 2.2rem;
+  }
+  @media (max-width: 335px){
+    font-size: 2rem;
+  }
 }
 
 .ml11 .text-wrapper {
@@ -163,4 +216,19 @@ a:hover{
 .career-title {
   font-size: 3rem;
   margin-left: 40%;
+  @media (max-width: 752px){
+    margin: 0 0 0 100px;
+}
+@media (max-width: 580px){
+  margin: 0 auto;
+  font-size: 2.2rem;
+}
+  @media (max-width: 453px){
+  margin: 0 auto;
+  font-size: 1.8rem;
+}
+  @media (max-width: 348px){
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
 } 
