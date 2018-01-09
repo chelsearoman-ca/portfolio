@@ -5,8 +5,28 @@ header{
     position: relative;
     z-index: 0;
     background: linear-gradient(90deg, transparent, rgba(43, 192, 228, .7) 0%, rgba(234, 236, 198, 0.8) 100%),
-      url("/public/images/CRinside-500.png") 50px 100px no-repeat,
+      url("/public/images/CRinside-500.png") -50px 80px no-repeat,
       url("/public/images/contact-background-lg.jpg") no-repeat;
+      @include desktop{
+        background:
+        url("/public/images/CRinside-500.png") -50px 50px no-repeat,
+        url("/public/images/contact-background-ls.jpg") center no-repeat;
+      }
+      @include mobile-plus{
+        background: 
+        url("/public/images/CRinside-500.png") -20px 20px no-repeat,
+        url("/public/images/contact-background-l.jpg") center no-repeat;
+      }
+      @include mobile{
+        background: 
+        url("/public/images/CRinside-500.png") -20px 10px no-repeat,
+        url("/public/images/contact-background-sm.jpg") center no-repeat;
+      }
+      @media(max-width:440px){
+        background:   linear-gradient(90deg, transparent, rgba(43, 192, 228, .7) 0%, rgba(234, 236, 198, 0.8) 100%),
+        url("/public/images/CRinside-250.png") 20px 80px no-repeat,
+        url("/public/images/contact-background-sm.jpg") center no-repeat;
+      }
 }
 
 header::after {
